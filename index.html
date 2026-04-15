@@ -358,7 +358,7 @@
         const subwayLineLayer = L.layerGroup().addTo(map);
         const poiChart = echarts.init(document.getElementById('chart-poi'));
 
-        fetch('C:\\Users\\孙宇波\\Desktopdata.json').then(res => res.json()).then(data => {
+        fetch('data.json').then(res => res.json()).then(data => {
             rawData = data;
             const legendList = document.getElementById('legend-list');
             data.labels.forEach((label, i) => {
